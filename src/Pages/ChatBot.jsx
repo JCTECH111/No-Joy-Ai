@@ -55,8 +55,14 @@ const Chatbot = () => {
 
   return (
     <div className="flex flex-col h-screen bg-gray-800 text-white p-4">
-    <div className="h-[3rem] sticky top-2 w-full p-2 bg-gray-900 rounded-xl">
-      header
+    <div className="h-[3rem] sticky flex items-center justify-between top-2 w-full p-2 bg-gray-900 rounded-xl">
+      <h1 className="font-bold text-xl text-blue-500">
+      No Joy Ai
+      </h1>
+      <div className="font-bold text-lg text-gray-500">
+        <span>Developer ||</span>
+        <span className="text-blue-500"> JoeCode</span>
+      </div>
     </div>
       {/* Chat Window */}
       <div
