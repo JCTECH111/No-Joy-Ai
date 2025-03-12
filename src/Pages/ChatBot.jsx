@@ -67,7 +67,7 @@ const Chatbot = () => {
       {/* Chat Window */}
       <div
         ref={chatWindowRef}
-        className="flex-1 overflow-y-auto  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
+        className="flex-1 overflow-y-auto scrollbar-hide  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
       >
         {messages.map((msg, index) => (
           <div
