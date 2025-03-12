@@ -67,7 +67,7 @@ const Chatbot = () => {
       {/* Chat Window */}
       <div
         ref={chatWindowRef}
-        className="flex-1 overflow-y-auto  rounded-lg shadow-md mt-4 p-1 mb-4"
+        className="flex-1 overflow-y-auto  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
       >
         {messages.map((msg, index) => (
           <div
@@ -101,7 +101,7 @@ const Chatbot = () => {
       </div>
 
       {/* Input Area */}
-      <div className="flex items-end gap-2 fixed bg-gray-800 bottom-2 w-full p-3">
+      <div className="flex items-end gap-2 fixed bg-gray-800 bottom-1 w-full p-3">
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
