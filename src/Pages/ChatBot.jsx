@@ -55,7 +55,7 @@ const Chatbot = () => {
 
   return (
     <div className="flex flex-col h-screen bg-gray-800 text-white p-4">
-    <div className="h-[3rem] sticky flex items-center justify-between top-2 w-full p-2 px-3 bg-gray-900 rounded-xl">
+    <div className="h-[3rem] sticky flex items-center z-40 justify-between top-2 w-full p-2 px-3 bg-gray-900 rounded-xl">
       <h1 className="font-bold text-xl text-blue-500">
       No Joy Ai
       </h1>
@@ -67,7 +67,7 @@ const Chatbot = () => {
       {/* Chat Window */}
       <div
         ref={chatWindowRef}
-        className="flex-1 overflow-y-auto scrollbar-hide scrollbar-hide::-webkit-scrollbar  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
+        className="flex-1 overflow-y-auto z-10 scrollbar-hide scrollbar-hide::-webkit-scrollbar  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {messages.map((msg, index) => (
@@ -102,7 +102,7 @@ const Chatbot = () => {
       </div>
 
       {/* Input Area */}
-      <div className="flex items-end gap-2 fixed bg-gray-800 bottom-1 w-full p-3">
+      <div className="flex items-end gap-2 fixed bg-gray-800 bottom-1 w-full p-3 z-30">
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
