@@ -12,7 +12,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 use Dotenv\Dotenv;
 
 // Load the .env file
-$dotenv = Dotenv::createImmutable('/var/www/html/backend/');
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // Access environment variables securely
