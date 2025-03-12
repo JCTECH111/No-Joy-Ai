@@ -67,12 +67,13 @@ const Chatbot = () => {
       {/* Chat Window */}
       <div
         ref={chatWindowRef}
-        className="flex-1 overflow-y-auto scrollbar-hide  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
+        className="flex-1 overflow-y-auto scrollbar-hide scrollbar-hide::-webkit-scrollbar  rounded-lg shadow-md mt-4 p-1 mb-[5rem]"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {messages.map((msg, index) => (
           <div
             key={index}
-            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"} mb-4`}
+            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"} mb-4 scrollbar-hide scrollbar-hide::-webkit-scrollbar`}
           >
             <div
               className={`max-w-[70%] relative overflow-hidden text-wrap  p p-3 rounded-lg ${msg.role === "user"
