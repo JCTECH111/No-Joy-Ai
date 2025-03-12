@@ -8,7 +8,7 @@ const Chatbot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const chatWindowRef = useRef(null); // Reference for auto-scrolling
 
-  const PHP_BACKEND_URL = "http://localhost:8000/server.php"; // Replace with your backend URL
+  const PHP_BACKEND_URL = "https://796b-197-210-8-100.ngrok-free.app/server.php"; // Replace with your backend URL
 
   const handleSendMessage = useCallback(async () => {
     if (!input.trim() || isLoading) return;
