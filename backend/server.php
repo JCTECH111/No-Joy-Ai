@@ -17,7 +17,7 @@ $dotenv->load();
 
 // Access environment variables securely
 $apiKey = $_ENV['OPENAI_API_KEY'];
-$model = "gpt-4o-mini";
+$model =$_ENV['MODEL'];
 
 // Validate API key
 if (empty($apiKey)) {
