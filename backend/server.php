@@ -16,8 +16,8 @@ $dotenv = Dotenv::createImmutable('/var/www/html/backend/');
 $dotenv->load();
 
 // Access environment variables securely
-$apiKey = $_ENV['OPENAI_API_KEY'];
-$model =$_ENV['MODEL'];
+$apiKey = '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';
+$model ='gpt-4o-mini';
 
 // Validate API key
 if (empty($apiKey)) {
