@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
+import { ArrowUpCircleIcon } from "@heroicons/react/24/solid"
 import axios from "axios";
 
 const Chatbot = () => {
@@ -54,6 +55,9 @@ const Chatbot = () => {
 
   return (
     <div className="flex flex-col h-screen bg-gray-800 text-white p-4">
+    <div className="h-[3rem] sticky top-2 w-full p-2 bg-gray-900 rounded-xl">
+      header
+    </div>
       {/* Chat Window */}
       <div
         ref={chatWindowRef}
@@ -106,7 +110,7 @@ const Chatbot = () => {
         <button
           onClick={handleSendMessage}
           disabled={isLoading}
-          className="p-2 bg-blue-600 h-[4rem] text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center"
+          className="p-2  h-[4rem]  flex items-center"
         >
           {isLoading ? (
             <svg
@@ -129,7 +133,7 @@ const Chatbot = () => {
               ></path>
             </svg>
           ) : (
-            "Send"
+            <ArrowUpCircleIcon className="h-[4rem] w-[3rem] text-blue-600 rounded-full" />
           )}
         </button>
       </div>
