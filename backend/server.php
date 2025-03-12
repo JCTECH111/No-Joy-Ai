@@ -55,7 +55,10 @@ $payload = [
             "content" => $data['messages'][0]['content'],
         ],
     ],
+    "max_tokens" => 100, // Limit response to 100 tokens
     "stream" => false,
+    "temperature" => 0.7, // Controls randomness
+    "top_p" => 0.9, // Controls diversity
 ];
 
 // Log the request payload for debugging
